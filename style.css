@@ -1,0 +1,51 @@
+head{
+	margin:0;
+}
+
+.mainHeader{
+	height: 100%;
+	width: 100%;
+	margin:0;
+	
+}
+
+.contain-box{
+	background-color:#7298af; 
+	color:#fbbc05;
+	width: 1200px;
+	height: 500px;
+    margin: auto;
+    display: inline;
+}
+
+.logo{
+	width: 200px;
+    height: 70px;
+	color: #fbbc05;
+	 display: inline;
+}
+
+#button{
+	float: right;
+	border-radius: 12px
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: #fbbc05;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.center{
+	width: 1170px;
+	margin:0 auto;
+	display: inline-block;
+}
+
+
+ 
+
+ 
