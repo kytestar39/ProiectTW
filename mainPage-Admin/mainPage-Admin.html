@@ -13,10 +13,14 @@
 			</div>
 		</header>
 		<div class="main-text-file">
+
 			<table class="tb-full">
 		        <tr>
 		        	<td class="sidebar-content"> 
+		        	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+					<div id="mySidenav" class="sidenav">
 						<div class="profil" >
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 							<img  class="imagine-Prof" src="img/Profile.jpg" />
 							<button class="add-pic">Adauga Imagine</button>
 							<button id="updProfile" class="edit-prof">Editeaza Profil</button>
@@ -92,7 +96,9 @@
 
 							</table>
 						</div>
+					</div>
 					</td>
+				
 					<td class="textFullContent">
 							<div class="menuBackground">
 								<div class="center">
