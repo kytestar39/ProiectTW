@@ -14,92 +14,149 @@
 		</header>
 		<div class="main-text-file">
 			<table class="tb-full">
-	      <thead>
 		        <tr>
-		        	<th class="sidebar-content"> 
+		        	<td class="sidebar-content"> 
 						<div class="profil" >
 							<img  class="imagine-Prof" src="img/Profile.jpg" />
 							<button class="add-pic">Adauga Imagine</button>
-							<button id="updProfile"class="edit-prof">Editeaza Profil</button>
-						</div>
+							<button id="updProfile" class="edit-prof">Editeaza Profil</button>
 
-						<div class="sidebar"> 
-						 <table>
-					      <thead>
-					        <tr>
-					       	  <th>Username: </th>
-					       	  <th></th>
-					       	</tr>
-					       	 <tr>
-					       	  <th>Nume: </th>
-					       	  <th></th>
-					       	</tr>
-					       	 <tr>
-					       	  <th>Prenume: </th>
-					       	  <th></th>
-					       	</tr>
-					       	 <tr>
-					       	  <th>E-mail: </th>
-					       	  <th></th>
-					       	</tr>
-					       	 <tr>
-					       	  <th>Alergii: </th>
-					       	  <th></th>
-					       	</tr>
-					      </thead>
-					     </table>
-						</div>
-					</th>
-							<th class="textFullContent">
-								<div class="topnav" >
-								    <a href="/sean/mainPage-Admin/mainPage-Admin.html ">Home</a>
-								    <div class="dropdown">
-									  <button href="#clasificare">Editare Clasificare Alergii</button>
-											<div class="dropdown-content">
-											    <a href="#">Adauga Clasificare Alergie</a>
-											    <a href="#">Editare Clasificare Alergie</a>
-											    <a href="#">Sterge Clasificare Alergie</a>
-											 </div>
-									</div>
-									<div class="dropdown">
-								    <button href="#sezon">Editare Alergie</button>
-								   		 <div class="dropdown-content">
-										    <a href="#">Adauga Alergie</a>
-										    <a href="#">Editare Alergie</a>
-										    <a href="#">Sterge Alergie</a>
-										 </div>
-									</div>
-									<div class="dropdown">
-								    <button href="#teste">Editare Teste Alergologice</button>
-								   		 <div class="dropdown-content">
-										    <a href="#"> Adauga Test Alergologic</a>
-										    <a href="#">Editare Test Alergologic</a>
-										    <a href="#">Sterge Test Alergologic</a>
-									 	</div>
-									</div>
-									<div class="dropdown">
-								    <button href="#view">Vizualizare</button>
-								   		 <div class="dropdown-content">
-										    <a href="#">Vizualizare Useri</a>
-										    <a href="#">Vizualizare Admini</a>
-										    <a href="#">Vizualizare Pagina Web</a>
-									 	</div>
-									</div>
-									<div class="dropdown">
-								    <button href="#edit-user-admin">Editare User / Admin</button>
-								   		 <div class="dropdown-content">
-										    <a href="#">Editare User</a>
-										    <a href="#">Editare Admin</a>
-										    <a href="#">Sterge User</a>
-										    <a href="#">Sterge Admin</a>
-									 	</div>
-									</div>
+							<div id="myDropdown3" class="modal3">
+
+								<div class="modal3-content">	
+									<span class="close">&times;</span>
+									<form action="insert.php" method="post">
+										<div class="form-input">
+											<label for="Nume">Nume:</label>
+											<input type="text" name="Nume" id="text"  placeholder="Nume">
+										</div>
+										<div class="form-input">
+											<label for="Prenume">Prenume:</label>
+											<input type="text" name="Prenume" id="text"  placeholder="Prenume">
+										</div>
+										<div class="form-input">
+											<label for="Username">Username:</label>
+											<input type="text" name="Username" id="text"  placeholder="UserName">
+										</div>
+										<div class="form-input">	
+											<label for="Password">Password:</label>
+											<input type="password" name="Password" id="password" placeholder="Parola">
+										</div>
+										<div class="form-input">
+											<label for="e_mail">E-mail:</label>
+											<input type="text" name="e_mail" id="text"  placeholder="E-Mail">
+										</div>
+										<div class="form-input">
+											<label for="Localitate">Localitate:</label>
+											<input type="text" name="Localitate" id="text"  placeholder="Localitate">
+										</div>
+										<div class="form-input">
+											<label for="Judet">Judet:</label>
+											<input type="text" name="Judet" id="text"  placeholder="Judet">
+										</div>
+										<div class="form-input">
+											<label for="Tara">Tara:</label>
+											<input type="text" name="Tara" id="text"  placeholder="Tara">
+										</div>
+										<div class="btn-Change">
+												<input type="submit"  name="Change" id="Change">
+										</div>
+									</form>	
 								</div>
-							</th>
-						</tr>
-					</div>
-			</thead>
-		</table>
+									
+							</div>
+						</div>
+						<div class="sidebar"> 
+							<table>
+
+								<tr>
+									<td>Username: </td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Nume: </td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Prenume: </td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>E-mail: </td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Alergii: </td>
+									<td></td>
+								</tr>
+
+							</table>
+						</div>
+					</td>
+					<td class="textFullContent">
+							<div class="menuBackground">
+								<div class="center">
+									<ul class="dropDownMenu">
+										<li><a href="/sean/mainPage-Admin/mainPage-Admin.html ">Home</a></li>
+										<li><a href="#">Vizualizare</a>
+											<ul>
+												<li><a href="#">Useri</a></li>
+											    <li><a href="#">Admini</a></li>
+											    <li><a href="#">Pagina Web</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Editare</a>
+											<ul>
+												<li><a  href="#">Clasificare Alergie &nbsp; &raquo;</a>
+													<ul>
+														<li><a href="#">Adauga</a></li>
+														<li><a href="#">Editare</a></li>
+														<li><a href="#">Sterge</a></li>
+													</ul>
+												</li>
+												<li><a href="#">Alergie  &nbsp; &raquo;</a>
+													<ul>
+														<li><a href="#">Adauga</a></li>
+														<li><a href="#">Editare</a></li>
+														<li><a href="#">Sterge</a></li>
+													</ul>
+												</li>
+												<li><a href="#">Test Alergologic  &nbsp; &raquo;</a>
+													<ul>
+														<li><a href="#">Adauga</a></li>
+														<li><a href="#">Editare</a></li>
+														<li><a href="#">Sterge</a></li>
+													</ul>
+												</li>
+												<li><a href="#">Admin  &nbsp; &raquo;</a>
+													<ul>
+														<li><a href="#">Adauga</a></li>
+														<li><a href="#">Editare</a></li>
+														<li><a href="#">Sterge</a></li>
+													</ul>
+												</li>
+												<li><a href="#">User  &nbsp; &raquo;</a>
+													<ul>
+														<li><a href="#">Adauga</a></li>
+														<li><a href="#">Editare</a></li>
+														<li><a href="#">Sterge</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>		
+							</div>
+						<div id="clasifAlerg" class="clasAlerg">
+							<h1>Clasificare Alergie</h1>
+								<ul id="clasific"></ul>
+							</div>
+					</td>
+
+				</tr>
+			</table>
+		</div>
+		<script src="myScript.js"></script>
 	</body>
 
 </html>
