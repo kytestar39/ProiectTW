@@ -5,7 +5,7 @@ var modal3 = document.getElementById('myDropdown3');
 var btnUpdProfile = document.getElementById("updProfile");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[3];
+var span3 = document.getElementsByClassName("close")[1];
 
 // When the user clicks the button, open the modal 
 btnUpdProfile.onclick = function() {
@@ -13,7 +13,7 @@ btnUpdProfile.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span3.onclick = function() {
     modal3.style.display = "none";
 }
 
@@ -24,3 +24,12 @@ window.onclick = function(event) {
     }
 }
 
+ /* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
