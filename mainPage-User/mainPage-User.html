@@ -1,56 +1,207 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
-		<link rel="stylesheet" href="style.css"/>
+		<title> SeAn </title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
 		<html lang="en">
-	
 	</head>
+	
 	<body class="mainBody">
 		<header class="mainHeader">
 			<div class="contain-box">	
-				<a href="/sean/mainPage-User/mainPage-User.html " class="logo">SeAn</a>
+				<a href="C:\Apache24\htdocs\TW/mainPage-User/mainPage-User.html " class="logo">SeAn</a>
 			</div>
 		</header>
-		<div class="main-text-file">
-		<table class="table">
-	      <thead>
+	<div class="main-text-file">
+		<table class="tb-full">
 		        <tr>
-		        	<th class="sidebar-content">
+		        	<td class="sidebar-content"> 
+		        	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Profil</span>
+					<div id="mySidenav" class="sidenav">
 						<div class="profil" >
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 							<img  class="imagine-Prof" src="img/Profile.jpg" />
-							<button class="add-pic">Adauga Imagine</button>
-							<button class="edit-prof">Editeaza Profil</button>
+							<button  class="add-pic">Adauga Imagine</button>
+							<button id="updProfile" class="edit-prof">Editeaza Profil</button>
+						
+						<div id="myDropdown3" class="modal3">
+							<span class="close">&times;</span>
+							<div class="modal3-content">	
+								<span class="close">&times;</span>
+								<form action="insert.php" method="post" autocomplete="on" name="editare profil">
+									<div class="form-input">
+									<table class="edit-table">
+										<tr>	
+											<td><label for="Nume">Nume:</label></td>
+											<td><input type="text" name="Nume" id="text"  placeholder="Nume"></td>
+										</tr>	
+										<tr>
+											<td><label for="Prenume">Prenume:</label></td>
+											<td><input type="text" name="Prenume" id="text"  placeholder="Prenume"></td>
+										</tr>
+										<tr>
+											<td><label for="data_nastere">Data nasterii:</label></td>
+												<td><label for="data_nastere">Ziua:</label>
+												<select name="day">
+													<option value="00">-Ziua-</option>
+													<option value="01">01</option>
+													<option value="02">02</option>
+													<option value="03">03</option>                             
+													<option value="04">04</option>                             
+													<option value="05">05</option>                             
+													<option value="06">06</option>                             
+													<option value="07">07</option>                             
+													<option value="08">08</option>                             
+													<option value="09">09</option>                             
+													<option value="10">10</option>                             
+													<option value="11">11</option>                             
+													<option value="12">12</option>                             
+													<option value="13">13</option>                             
+													<option value="14">14</option>                             
+													<option value="15">15</option>                             
+													<option value="16">16</option>                             
+													<option value="17">17</option>                             
+													<option value="18">18</option>                             
+													<option value="19">19</option>                             
+													<option value="20">20</option>                             
+													<option value="21">21</option>                             
+													<option value="22">22</option>                             
+													<option value="23">23</option>                             
+													<option value="24">24</option>                             
+													<option value="25">25</option>                             
+													<option value="26">26</option>                             
+													<option value="27">27</option>                             
+													<option value="28">28</option>                             
+													<option value="29">29</option>                             
+													<option value="30">30</option>                             
+													<option value="31">31</option>        
+												</select>
+												<label for="data_nastere">Luna:</label>
+												<select name="month">
+													  <option value="00">-Luna-</option>
+													  <option value="01">01</option>
+													  <option value="02">02</option>
+													  <option value="03">03</option>
+													  <option value="04">04</option>
+													  <option value="05">05</option>
+													  <option value="06">06</option>
+													  <option value="07">07</option>
+													  <option value="08">08</option>
+													  <option value="09">09</option>
+													  <option value="10">10</option>
+													  <option value="11">11</option>
+													  <option value="12">12</option>
+												</select>
+												<label for="data_nastere">Luna:</label>
+												<select name="year">
+														<option value="0000">-Anul-</option>
+														<option value="1979">1979</option>
+														<option value="1980">1980</option>
+														<option value="1981">1981</option>
+														<option value="1982">1982</option>
+														<option value="1983">1983</option>
+														<option value="1984">1984</option>
+														<option value="1985">1985</option>
+														<option value="1986">1986</option>
+														<option value="1987">1987</option>
+														<option value="1988">1988</option>
+														<option value="1989">1989</option>
+														<option value="1990">1990</option>
+														<option value="1991">1991</option>
+														<option value="1992">1992</option>
+														<option value="1993">1993</option>
+														<option value="1994">1994</option>
+														<option value="1995">1995</option>
+														<option value="1996">1996</option>
+														<option value="1997">1997</option>
+														<option value="1998">1998</option>
+														<option value="1999">1999</option>
+														<option value="2000">2000</option>
+														<option value="2001">2001</option>
+														<option value="2002">2002</option>
+														<option value="2003">2003</option>
+														<option value="2004">2004</option>
+														<option value="2005">2005</option>
+														<option value="2006">2006</option>
+														<option value="2007">2007</option>
+														<option value="2008">2008</option>
+														<option value="2009">2009</option>
+														<option value="2010">2010</option>
+														<option value="2011">2011</option>
+														<option value="2012">2012</option>
+														<option value="2013">2013</option>
+														<option value="2014">2014</option>
+														<option value="2015">2015</option>
+														<option value="2016">2016</option>
+														<option value="2017">2017</option>
+													   </select>
+											</td>
+										</tr>									
+										<tr>
+											<td><label for="Username">Username:</label></td>
+											<td><input type="text" name="Username" id="text"  placeholder="UserName"></td>
+										</tr>	
+										<tr>
+											<td><label for="Password">Password:</label></td>
+											<td><input type="password" name="Password" id="password" placeholder="Parola"></td>
+										</tr>
+										<tr>
+											<td><label for="e_mail">E-mail:</label></td>
+											<td><input type="text" name="e_mail" id="text"  placeholder="E-Mail"></td>
+										</tr>
+										<tr>
+											<td><label for="sex">Sexul:</label></td>
+											<td class="sex">Masculin   <input type="radio" name="sex" value="masculin"> Feminin   <input type="radio" name="sex" value="feminin"></td>
+										</tr>																	
+										<tr>
+											<td><label for="Localitate">Localitate:</label></td>
+											<td><input type="text" name="Localitate" id="text"  placeholder="Localitate"></td>
+										</tr>	
+										<tr>
+											<td><label for="Judet">Judet:</label></td>
+											<td><input type="text" name="Judet" id="text"  placeholder="Judet"></td>
+										</tr>	
+										<tr>
+										<td><label for="Tara">Tara:</label></td>
+										<td><input type="text" name="Tara" id="text"  placeholder="Tara"></td>
+									</tr>
+									</table>
+									<div class="btn-Change">
+											<input type="submit"  name="Change" id="Change"></input>
+											<input type="reset" value="Sterge" name="Sterge" id="Sterge"></input>
+									</div>
+									</div>
+								</form>				
+							</div>
 						</div>
+					<div class="sidebar"> 
+						<table>
 
+							<tr>
+								<td>Username: </td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Nume: </td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Prenume: </td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>E-mail: </td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Alergii: </td>
+								<td></td>
+							</tr>
 
-						<div class="sidebar"> 
-						 <table>
-					      <thead>
-					        <tr>
-					       	  <th>Username: </th>
-					       	  <th></th>
-					       	</tr>
-					       	 <tr>
-					       	  <th>Nume: </th>
-					       	  <th></th>
-					       	</tr>
-					       	 <tr>
-					       	  <th>Prenume: </th>
-					       	  <th></th>
-					       	</tr>
-					       	 <tr>
-					       	  <th>E-mail: </th>
-					       	  <th></th>
-					       	</tr>
-					       	 <tr>
-					       	  <th>Alergii: </th>
-					       	  <th></th>
-					       	</tr>
-					      </thead>
-					     </table>
-						</div>
-				</th>
+						</table>
+					</div>
+				</div>
+				</td>
 				<th class="textFullContent">
 						<div class="topnav" >
 						    <a href="/sean/mainPage-User/mainPage-User.html ">Home</a>
@@ -73,7 +224,7 @@
 								 </div>
 							</div>
 							<div class="dropdown">
-						    <button href="#teste">Teste Alergologice</button>
+								<button href="#teste">Teste Alergologice</button>
 						   		 <div class="dropdown-content">
 								    <a href="#">Teste cutanate</a>
 								    <a href="#">Teste serologice</a>
@@ -82,12 +233,13 @@
 							</div>
 						</div>
 				</th>
-			</tr>
-
-		</div>
-		</thead>
+				</tr>
+				</div>
 		</table>
+	
+	  <script src="myScript.js"></script>
 	</body>
+	</div>
 
 </html>
 
