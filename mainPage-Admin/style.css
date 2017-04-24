@@ -89,10 +89,29 @@ input[type="text"],input[type="password"]{
 	display: inline-block;
 }
 
+.edit-table td label,.sex{
+color: red;	
+}
+
  #Change  {
 	color:#221c18;
 	width: 80px;
 	margin-left: 0px;
+	text-align: center;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 15px;
+	padding:10px 0px;
+	background:transparent;
+	background-color: #b2860e;
+	border: none;
+	border-radius: 10px;
+	border-bottom: 4px solid #d1661f; 
+}
+#Sterge {
+	color:#221c18;
+	width: 80px;
+	margin-left: 10px;
 	text-align: center;
 	margin-top: 10px;
 	font-weight: bold;
