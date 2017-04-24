@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title> SeAn </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
 		<html lang="en">
 	</head>
@@ -10,13 +12,15 @@
 		<header class="mainHeader">
 			<div class="contain-box">	
 				<a href="C:\Apache24\htdocs\TW/mainPage-User/mainPage-User.html" class="logo">SeAn</a>
+				<button id="buttonLog">Log Out</button>
 			</div>
 		</header>
+		<main>
 	<div class="main-text-file">
 		<table class="tb-full">
 		        <tr>
 		        	<td class="sidebar-content"> 
-		        	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Profil</span>
+		        	<span class="prof-butt" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Profil</span>
 					<div id="mySidenav" class="sidenav">
 						<div class="profil" >
 							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -207,7 +211,7 @@
 								<div class="center">
 									<ul class="dropDownMenu">
 										<li><a href="C:\Apache24\htdocs\TW/mainPage-User/mainPage-User.html">Home</a></li>
-										<li><a href="#">Clasificare Alergii</a>
+										<li><a href="#" >Clasificare Alergii</a>
 											<ul>
 												<li><a href="#">Hipersensibilitate de tip I</a></li>
 											    <li><a href="#">Hipersensibilitate de tip II</a></li>
@@ -237,7 +241,13 @@
 				</tr>
 				</div>
 		</table>
-	
+		</main>
+	<footer>
+		<ul>
+			<li><a href="">Contact</a></li>
+			<li><a href="">About</a></li>
+		</ul>
+	</footer>
 	  <script src="myScript.js"></script>
 	</body>
 	</div>
